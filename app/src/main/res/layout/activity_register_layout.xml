@@ -27,6 +27,7 @@
         android:layout_marginTop="5dp"/>
 
     <TextView
+        android:id="@+id/et_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Lengkap"
@@ -71,7 +72,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buat password"
+        android:text="Buat Kata Sandi"
         android:layout_marginTop="10dp"
         style="@style/text_primary"/>
 
@@ -86,6 +87,7 @@
         style="@style/edit_text_style"/>
 
     <Button
+        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
@@ -94,6 +96,16 @@
         android:textSize="16sp"
         android:fontFamily="@font/poppins_medium"
         android:text="Daftar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Masuk"
+        android:layout_marginVertical="32dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/greySecondary"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>
