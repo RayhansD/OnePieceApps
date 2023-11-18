@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:text="Daftar"
+        android:layout_marginTop="38dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Daftarkan Identitas Anda"
+        android:textColor="@color/greyPrimary"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/et_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:layout_marginTop="32dp"
+        style="@style/text_primary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_marginTop="8dp"
+        style="@style/edit_text_style" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="10dp"
+        style="@style/text_primary" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_marginTop="5dp"
+        style="@style/edit_text_style" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor HP"
+        android:layout_marginTop="10dp"
+        style="@style/text_primary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:layout_marginTop="5dp"
+        style="@style/edit_text_style" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Kata Sandi"
+        android:layout_marginTop="10dp"
+        style="@style/text_primary"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ketik disini"
+        android:drawableEnd="@drawable/outline_visibility"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        style="@style/edit_text_style"/>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="32dp"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:text="Daftar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Masuk"
+        android:layout_marginVertical="32dp"
+        android:textSize="14sp"
+        android:textColor="@color/greySecondary"
+        android:layout_gravity="center"/>
+</LinearLayout>
