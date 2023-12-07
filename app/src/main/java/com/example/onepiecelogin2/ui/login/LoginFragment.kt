@@ -35,7 +35,7 @@ class LoginFragment : Fragment() {
             observeIsLogin().observe(requireActivity()){
                 it.let { data ->
                     if (data != null){
-                        findNavController().navigate(R.id.action_registerFragment_to_navigationParentFragment)
+                        findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment)
                     }
                 }
             }
@@ -57,7 +57,7 @@ class LoginFragment : Fragment() {
             }
         }
         binding.tvRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
 

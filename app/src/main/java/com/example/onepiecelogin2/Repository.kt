@@ -12,4 +12,6 @@ class Repository(private val localRepository: LocalRepository, private val remot
     suspend fun getUser(email: String, password: String): UserEntity {
         return localRepository.getUser(email, password)
     }
+
+    suspend fun getMovies() = remoteRepository.getMovies()
 }

@@ -1,6 +1,7 @@
 package com.example.onepiecelogin2.di
 
 import com.example.onepiecelogin2.data.remote.ApiService
+import com.example.onepiecelogin2.utils.Constant.BASE_URL
 import okhttp3.OkHttpClient
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -17,7 +18,7 @@ val networkModule= module{
     }
     single {
         Retrofit.Builder()
-            .baseUrl("https://api.onepiece.org")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(get())
             .build()

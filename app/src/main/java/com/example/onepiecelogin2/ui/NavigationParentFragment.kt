@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.onepiecelogin2.R
 import com.example.onepiecelogin2.databinding.FragmentNavigationParentBinding
+import com.example.onepiecelogin2.ui.home.HomeFragment
 
 class NavigationParentFragment : Fragment() {
 
